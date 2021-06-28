@@ -1,0 +1,113 @@
+/*############################################*/
+/*### CONFIGURAÇÕES INICIAIS DO DOCUMENTO ####*/
+/*############################################*/
+
+:root {
+  --amarelo: #f2e205;
+  --roxo: #510f9d;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*############################################*/
+/*#### CONFIGURAÇÕES GERAIS DO DOCUMENTO #####*/
+/*############################################*/
+
+body {
+  background: var(--roxo);
+  font-family: Arial, Helvetica, sans-serif;
+  color: azure;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+header .logo {
+  margin-left: 1rem;
+  color: var(--amarelo);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #f2e205;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+/*############################################*/
+/*##### CONFIGURAÇÕES DO FILME PRINCIPAL #####*/
+/*############################################*/
+
+.main-movie {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url(/img/clicks.jpg);
+
+  height: 430px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-movie .movie-description {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  max-width: 550px;
+}
+
+.movie-title {
+  margin-top: 2rem;
+  font-size: 3.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.btn {
+  background-color: #f2e205ce;
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  color: #510f9d;
+  padding: 3.5% 4.25%;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.btn:hover {
+  background-color: #510f9d;
+  color: #f2e205;
+}
+
+.container {
+  margin-left: 3%;
+}
+
+.box-movie {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carousel-movies {
+  margin-top: 1%;
+}
